@@ -1,21 +1,5 @@
 import Phaser from "phaser";
-
-class BootScene extends Phaser.Scene {
-  constructor() {
-    super({ key: "BootScene" });
-  }
-
-  create(): void {
-    this.add
-      .text(
-        this.scale.width / 2,
-        this.scale.height / 2,
-        "Царство Пяти Начал\nЗагрузка...",
-        { color: "#ffffff", fontSize: "32px", align: "center" },
-      )
-      .setOrigin(0.5);
-  }
-}
+import { BootScene } from "./scenes/BootScene";
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
